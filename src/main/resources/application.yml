@@ -21,3 +21,6 @@ cloud:
       bucket: ${BUCKET_NAME}
     region:
       static: ${REGION}
+youtube:
+  api:
+    key: ${YOUTUBE}
