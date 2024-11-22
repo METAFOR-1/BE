@@ -24,3 +24,5 @@ cloud:
 youtube:
   api:
     key: ${YOUTUBE}
+chatgpt:
+  api-key: ${GPT}
