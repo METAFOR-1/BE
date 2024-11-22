@@ -22,13 +22,6 @@ public class controller {
     private final S3Service s3Service;
     private final YoutubeService youtubeService;
 
-    @PostMapping("/test")
-    public ResponseModelDto test(@RequestBody RequestMentDto requestMentDto) {
-
-        ResponseModelDto responseModelDto = new ResponseModelDto(requestMentDto.ment(), requestMentDto.ment());
-        return responseModelDto;
-    }
-
     @GetMapping("/check")
     public ResponseEntity<String> check(){
         return ResponseEntity.ok("check");
