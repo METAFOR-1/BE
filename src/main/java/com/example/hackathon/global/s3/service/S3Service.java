@@ -19,7 +19,7 @@ public class S3Service {
     private final AmazonS3 s3Client;
     private final String bucketName;
 
-    public S3Service(AmazonS3 s3Client, @Value("${bucket_name}") String bucketName) {
+    public S3Service(AmazonS3 s3Client, @Value("${BUCKET_NAME}") String bucketName) {
         this.s3Client = s3Client;
         this.bucketName = bucketName;
     }

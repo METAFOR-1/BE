@@ -26,8 +26,6 @@ public class controller {
     public ResponseModelDto test(@RequestBody RequestMentDto requestMentDto) {
 
         ResponseModelDto responseModelDto = new ResponseModelDto(requestMentDto.ment(), requestMentDto.ment());
-        System.out.println("responseModelDto.muscleName() = " + responseModelDto.muscleName());
-
         return responseModelDto;
     }
 

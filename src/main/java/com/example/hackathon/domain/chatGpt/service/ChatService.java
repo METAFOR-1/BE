@@ -28,7 +28,7 @@ public class ChatService {
 
     public String generateSummaryForKeyword(String keyword) {
         // 전달받은 키워드를 사용해 질문을 생성
-        String question = String.format("%s 통증과 관련한 특징을 짧게 요약해줘. 환자 입장에서 이해가 되는 문장으로.", keyword);
+        String question = String.format("%s 통증과 관련한 특징을 요약해줘. 환자 입장에서 이해가 되는 문장으로.", keyword);
         return getChatResponse(question);
     }
 }
