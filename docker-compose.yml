@@ -13,6 +13,7 @@ services:
       BUCKET_NAME: ${BUCKET_NAME}
       REGION: ${REGION}
       YOUTUBE: ${YOUTUBE}
+      GPT: ${GPT}
       #      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
       #       MAIL_USERNAME : ${MAIL_USERNAME}
       #       MAIL_PASSWORD : ${MAIL_PASSWORD}

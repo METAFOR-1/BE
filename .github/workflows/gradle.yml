@@ -110,6 +110,7 @@ jobs:
             echo "BUCKET_NAME=${{ secrets.BUCKET_NAME }}" >> ~/deploy/.env
             echo "REGION=${{ secrets.REGION }}" >> ~/deploy/.env
             echo "YOUTUBE=${{ secrets.YOUTUBE }}" >> ~/deploy/.env
+            echo "GPT=${{ secrets.GPT }}" >> ~/deploy/.env
             
             sudo docker-compose -f ~/deploy/docker-compose.yml pull
             sudo docker-compose -f ~/deploy/docker-compose.yml up -d
