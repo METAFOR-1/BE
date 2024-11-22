@@ -25,20 +25,40 @@ public class DiagnosisController {
     private final S3Service s3Service;
     private final ChatService chatService;
 
+//    @PostMapping("/diagnosis")
+//    public ResponseEntity<ResponseDiagnosisDto> diagnosis(@RequestBody RequestMentDto requestMentDto)
+//            throws IOException {
+//
+//        ResponseModelDto diagnosis = diagnosisService.diagnosis(requestMentDto);
+//        YoutubeResponseDto youtubeResponseDto = youtubeService.searchVideo(diagnosis.muscleName());
+//
+//        URL imageUrl = s3Service.getImageUrl(diagnosis.muscleName() + ".jpg");
+//
+//        String chatgptAnswer = chatService.generateSummaryForKeyword(diagnosis.muscleName());
+//
+//        ResponseDiagnosisDto responseDiagnosisDto = ResponseDiagnosisDto.of(diagnosis, youtubeResponseDto, imageUrl,
+//                chatgptAnswer);
+//
+//        return ResponseEntity.ok(responseDiagnosisDto);
+//    }
+
     @PostMapping("/diagnosis")
     public ResponseEntity<ResponseDiagnosisDto> diagnosis(@RequestBody RequestMentDto requestMentDto)
             throws IOException {
 
-        ResponseModelDto diagnosis = diagnosisService.diagnosis(requestMentDto);
-        YoutubeResponseDto youtubeResponseDto = youtubeService.searchVideo(diagnosis.muscleName());
+        String muscleName = chatService.generateDiagnosis(requestMentDto.ment());
+        YoutubeResponseDto youtubeResponseDto = youtubeService.searchVideo(muscleName);
 
-        URL imageUrl = s3Service.getImageUrl(diagnosis.muscleName() + ".jpg");
+        URL imageUrl = s3Service.getImageUrl(muscleName + ".jpg");
 
-        String chatgptAnswer = chatService.generateSummaryForKeyword(diagnosis.muscleName());
+        String chatgptAnswer = chatService.generateSummaryForKeyword(muscleName);
 
-        ResponseDiagnosisDto responseDiagnosisDto = ResponseDiagnosisDto.of(diagnosis, youtubeResponseDto, imageUrl,
+        ResponseDiagnosisDto responseDiagnosisDto = ResponseDiagnosisDto.of2(muscleName, youtubeResponseDto, imageUrl,
                 chatgptAnswer);
 
         return ResponseEntity.ok(responseDiagnosisDto);
     }
+
+
+
 }
