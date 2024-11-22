@@ -9,6 +9,6 @@ public class controller {
 
     @GetMapping("/test")
     public String test() {
-        return "test";
+        return "남해윤";
     }
 }
