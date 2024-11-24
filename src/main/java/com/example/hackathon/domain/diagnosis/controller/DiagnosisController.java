@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.net.URL;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -58,6 +59,11 @@ public class DiagnosisController {
 //
 //        return ResponseEntity.ok(responseDiagnosisDto);
 //    }
+
+    @GetMapping("/check")
+    public ResponseEntity<String> check(){
+        return ResponseEntity.ok("aws health check");
+    }
 
 
 
