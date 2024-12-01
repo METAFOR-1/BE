@@ -31,11 +31,11 @@
 
 ### Database  
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white) 
 
-### AWS  
+### CLOUD  
 ![Amazon EC2](https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)  
-![Amazon RDS](https://img.shields.io/badge/Amazon%20RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white)  
-![Amazon S3](https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)  
+![Amazon RDS](https://img.shields.io/badge/Amazon%20RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white)   
 ![Amazon Route 53](https://img.shields.io/badge/Route%2053-FF9900?style=for-the-badge&logo=amazonroute53&logoColor=white)  
 ![AWS Load Balancer](https://img.shields.io/badge/Load%20Balancer-1E90FF?style=for-the-badge&logo=amazonaws&logoColor=white)  
 
