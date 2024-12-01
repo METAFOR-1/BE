@@ -1,14 +1,17 @@
 # BE  
 METAFOR 연합 해커톤  
 
+
 ## 🙋🏻‍♂️ Member  
 - **이준범** - [@ss7622](https://github.com/ss7622)  
 - **남해윤** - [@haeyoon1](https://github.com/qormoon)  
+
 
 ## 🔍 System Architecture  
 <p align="center">  
   <img src="https://github.com/user-attachments/assets/429c6d1b-ded4-479c-bf86-b069e593c25d" alt="System Architecture" width="600">  
 </p>  
+
 
 ## 💻 Development Environment  
 | 항목                       | 내용                                   |
@@ -22,7 +25,8 @@ METAFOR 연합 해커톤
 | **Java Version**          | Java 17                               |
 | **API Test Tools**        | Postman, Swagger                      |
 
-## 📜 Tech Stacks  
+
+## ⚒️ Tech Stacks  
 
 ### Framework  
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
@@ -40,3 +44,14 @@ METAFOR 연합 해커톤
 ### CI/CD  
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)  
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+
+
+## 📡 GIT CONVENTION  
+
+- **feat**: 새로운 기능 추가
+- **fix**: 버그 수정
+- **docs**: 문서 수정
+- **style**: 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우
+- **refactor**: 코드 리팩토링
+- **test**: 테스트 코드, 리펙토링 테스트 코드 추가
+- **chore**: 빌드 업무 수정, 패키지 매니저 수정
