@@ -2,7 +2,7 @@
 
 ## 🙋🏻‍♂️ Member  
 - **이준범** - [@ss7622](https://github.com/ss7622)  
-- **남해윤** - [@haeyoon1](https://github.com/qormoon)  
+- **남해윤** - [@haeyoon1](https://github.com/haeyoon1)  
 
 
 ## 🔍 System Architecture  
